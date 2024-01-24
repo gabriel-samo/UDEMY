@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+}
+
+#showPokemon {
+    background-color: red;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    padding: 0.7em;
+    color: white;
+}
+
+#showPokemon:hover {
+    background-color: rgb(168, 0, 0);
+}

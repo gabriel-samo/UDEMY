@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+}
+
+hr{
+    width: 21.8em;
+}
+
+#main{
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 21.9em;
+    height: 28em;
+}
+
+img {
+    margin: 0 auto;
+    height: 10em;
+    width: 21.8em;
+    border-bottom: 1px solid grey;
+}
+
+h3{
+    display: inline-block;
+}
