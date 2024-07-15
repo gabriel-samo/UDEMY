@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble sort - my solution</title>
+</head>
+<body>
+    <h1>Bubble sort - my solution</h1>
+
+    <script>
+        const nums = [5,19,6,3,15,35,1,2];
+        const nums2 = [5,11,66,4,63,1,3,46,8,4,2,9,4,3,5,8,7,54,31,49,94,13,64]
+
+        function swap(arr,idx1,idx2){
+            let temp = arr[idx1];
+            arr[idx1] = arr[idx2];
+            arr[idx2] = temp;
+            return arr;
+        }
+
+        function bubbleSort(arr){
+            for(let i = arr.length; i > 0; i--){
+                for(let j = 0; j < i - 1; j++){
+                    if(arr[j] > arr[j+1]){
+                        swap(arr, j+1, j);
+                    }
+                }
+            }
+            return arr;
+        }
+
+        console.log(bubbleSort(nums))
+        console.log(bubbleSort(nums2))
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 15 - reverse</title>
+</head>
+
+<body>
+    <h1>Exercise 15 - reverse</h1>
+    <h2>answers in the console</h2>
+
+    <script>
+        function reverse(str) {
+            // add whatever parameters you deem necessary - good luck!
+            if(!str[0]) return str;
+
+            let last = str.slice(str.length-1);
+            str = str.slice(0, str.length-1);
+            return last + reverse(str);
+        }
+
+        console.log(reverse('awesome')); // 'emosewa'
+        console.log(reverse('rithmschool')); // 'loohcsmhtir'
+    </script>
+</body>
+
+</html>

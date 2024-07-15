@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Pointers - isSubsequence</title>
+</head>
+
+<body>
+    <h1>Multiple Pointers - isSubsequence</h1>
+    <script>
+        function maxSubarraySum(arr, num) {
+            // add whatever parameters you deem necessary - good luck!
+            if (num > arr.length) return null;
+
+            let tempSum = 0;
+            let maxSum = 0;
+
+            for (let i = 0; i < num; i++) tempSum += arr[i];
+
+            for (let i = 0; i < arr.length - num; i++) {
+                tempSum = tempSum - arr[i] + arr[i + num];
+                maxSum = Math.max(tempSum, maxSum);
+            }
+            return maxSum;
+        }
+    </script>
+</body>
+
+</html>

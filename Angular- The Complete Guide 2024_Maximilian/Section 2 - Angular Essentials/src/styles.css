@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top left, #181023, #0b0519);
+  color: #c3b3d8;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+::-webkit-scrollbar {
+  background: inherit;
+  width: 0.5rem;
+}
+
+/* background of the scrollbar except button or resizer */
+::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+/* scrollbar itself */
+::-webkit-scrollbar-thumb {
+  background: #babac0;
+  border-radius: 16px;
+}
+
+/* set button(top and bottom of the scrollbar) */
+::-webkit-scrollbar-button {
+  display: none;
+}

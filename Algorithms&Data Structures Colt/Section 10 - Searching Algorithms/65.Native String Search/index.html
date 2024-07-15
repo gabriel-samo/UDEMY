@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Native String Search</title>
+</head>
+<body>
+    <h1>Native String Search</h1>
+
+    <script>
+        function nativeSearch(long, short){
+            let count = 0;
+            for(let i = 0; i < long.length; i++){
+                for(let j = 0; j < short.length; j++){
+                    if(short[j]!==long[i+j]){
+                        break;
+                    }
+                    if(j===short.length-1) count++;
+                }
+            }
+            return count;
+        }
+        console.log(nativeSearch('wowomgzomg','omg')) // 2
+        console.log(nativeSearch('helheilotoheiyhei','hei')) // 3
+        console.log(nativeSearch('lorie loled','lol')) // 1
+    </script>
+</body>
+</html>
